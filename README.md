@@ -8,8 +8,7 @@
 </p>
 
 ## About The Project
-# Shifra Training Center - Learning Management System (LMS)
-|*last training task*|
+# Shifra Training Center - Learning Management System (LMS) *last training task*
 
 ## 📋 Project Overview
 
@@ -422,8 +421,8 @@ The system analyzes student data to generate personalized learning paths:
 | Role | Email | Password |
 |------|-------|----------|
 | Admin | admin@edulink.com | admin123 |
-| Instructor | instructor@shifra.com | instructor123 |
-| Student | student@shifra.com | student123 |
+| Instructor | user email from 2 to 11 | instructor123 |
+| Student | user email from 12 to 111 | student123 |
 
 ### Testing Features
 
@@ -488,7 +487,7 @@ This project is developed for educational purposes as part of university trainin
 
 ## 📞 Contact
 
-**Developer:** Hasan Sammour  
+**Developer:** Eng.Hasan Sammour  
 **Email:** hasansammour01@gmail.com  
 **GitHub:** [HasanSammour](https://github.com/HasanSammour)  
 **University:** Islamic University of Gaza (IUG)
