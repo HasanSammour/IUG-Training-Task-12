@@ -8,7 +8,7 @@
 </p>
 
 ## About The Project
-# Shifra Training Center - Learning Management System (LMS) *last training task*
+# Shifra Training Center - Learning Management System (LMS) - *last training task*
 
 ## 📋 Project Overview
 
