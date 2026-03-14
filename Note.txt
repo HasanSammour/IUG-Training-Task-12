@@ -1,0 +1,344 @@
+When The Db is empty i create an essential Data Seeder which seed DB with permessions 
+roles and one User Which is system adminstrator
+
+I forget to mension her that this seeder is run by a middle ware i create and att it to only Home Page route So
+when user run the app and find The DB Emty it's Create The Essential Data we need to the platform to works 
+1- Admin User
+2- Roles, Permessions, and assign permessions to roles ... etc.
+
+
+95%
+Success Rate   >> This is a constant Number not calculated from any thing
+
+
+We are now seed all tables in DB So we can deal with some real Data
+This will take a few minutes... Since i make the seeder create a lot of records
+
+
+Start with Admin Views {Admin can controller all the platform and have access to almost all Data in DB}
+1- Admin Dashboard (Same as Admin Panel)
+2- All courses Page changed when Admin login we have new buttons and Actions That satisfy what Admin can do through the platform
+
+Note when i am on dashboard (USER PANEL) the layout is changed 
+1- upper navbar have three routes {Dashboard, Home, and link to User Contacts Page (we have chat system we create that we will show later in video)}
+2- bottom navbar That shown in User Dashboard Have Some Links for Current User 
+{Admin}
+{instructor}
+{Student}
+
+Main Pages
+
+3- Menu Page it seems like it's an Additional Page BUT The main usage of it is to show button That leads to Categories Page so we can Manage Categories 
+
+4- categories 
+# I cannot right in icon input i can only select icon from what i see
+
+Also menu page show courses as an addition
+
+5- Now we have 
+# student
+# staff (Admins, Instructors)
+# courses
+# Enrollement
+Management Pages
+
+we will show one in details Then Others wll be same with some differences but alittle same logic so let us go
+
+when admin approve review it's appears for all Users
+
+when i press on some course reviews i go to page and found it already filtered 
+
+
+Now next center of Admin Operations, Analytics, Reports, .... 
+Then we will show The Notification and Messaging Systems and Profile Pages which have consistant Design and building for All Roles {Admin instructor and Student}
+
+Start with Analytics 
+1- Analytics Dashboard
+Show an overview of all systems analytics Then we have 5 parts of Analytics
+1- Students
+2- Courses
+3- Revenue Analytics
+4- Enrollment Analytics
+5- Peak Hours
+
+we can change The period of Anaytics between 
+7 days
+30 days
+90 days 
+and year
+
+"""""""""""""""""""""""
+ Note That i need Internet to download report 
+ I will sow That Later in Video or in another Video
+
+This is All for Analytics we miss now Notification and Messaging System
+
+Since There is no seeded Notifications for Admin we will see System in instructor Side 
+
+But i will show here one Thing before we move to Next Role which is Contacts Link in NavBar it's like a phone list of Users That This User That logged in can contact with
+
+ >> We have pagination styles problem from bootstrap i will fix <<
+
+we will see what happened to message in instructor Side now last thing is User Profile Take a look on it
+
+The poages you see now are inbox and sent from Messaging system that we will see more about it later
+
+This setting is a dummy Page That may be useful in future Updates
+
+()))))))))(((((()))
+THAT IS ALL FOR ADMIN
+()))))))))(((((()))
+
+
+Now as we see above Admin can control all things in the app 
+
+Now The expected flow for the app is as follows
+		Admin can Add Users {instructors/Students}
+				|
+		Students can register from Register Page
+				|
+		Instructor can create his own courses/edit and delete them
+				|
+		Student can enroll in These courses
+				|
+		Admin can create courses/Enrollement and assign them to Users
+				|	
+		The learning tools in The app are as follows
+			# Instructor can create sessions for some course
+			  Sessions Done Via Googlemeet Or Zoom	
+			# Instructor can Create Assignments for Some course
+			  Students can submit there solution
+			# Instructor can upload materials for some course
+			  Students can View/Download These Materials	
+			# Students can Generate an AI Learning Path 
+			  whcih contains
+				-> courses that hye enroll
+				-> Courses from his wishlist
+				-> and recommendations
+				|
+		Students and Instructor can Manage Their Upcoming sessions
+		Assgnments through calender in Their Dashboard
+		
+
+		Users can chat through Massaging system.
+
+NOW SEE THE PAGES NEXT OR Instrcutor/Student
+
+
+
+I for get to mention before That i add shifra Logo as favicon
+
+Let Us Continue Now ....
+
+
+
+The Orange is upcoming Assignment we can update it's Date by Drag and Drop
+And blue is session also we can Update it's same
+
+
+By Click On it we can Edit it ... 
+
+
+instructor 
+
+MyCourses Page  --> When he choose course he can gi to course-students Page 
+Course-Students Page Can Manage Students, Sessions, Assignments, Materials
+
+Now we will make student enroll in this course >> The enrollement will be pending untill admin activate it
+
+
+This is a demo registeration process No payment only add record to DB
+
+
+
+Now let us add session
+assignment
+material for This course and see how the two users use the App
+
+
+
+Now when instructor Create A course he cannot Create Session Materials Assignments Or contact with it's Student before Admin Activate it
+
+
+I solve The problem we face let us continue
+
+
+Now As we see in student side he can join meet Then instructor Mark Attendence for Him
+Now in student side he can View/Download This Material
+Add Assignment File Optional {May The Assignment Said in Session}
+
+May The Answer Doesnot need file ...
+
+Now Student Join Sessions, Solve Assignment Download Materials Finish The Course Instructor Mark Progress for Him in each session until he reach 100% Then he can Add His review and 
+REQUEST CERTIFICATION 
+
+This Page show Student Progrss Details for Instructor 
+
+This sharing will Done as a reminder for Stdents Via Notification System
+
+
+
+Pending Approval
+This means That Admin Must Approved The Review Before it seen by Other Students
+Now After it Approved Student cannot edit it
+
+
+when instructor See The Notification he Generate Certification to This Student 
+
+
+
+I have problem In Download Manager I solve it ....
+
+we can also export report for all students progress for some course
+
+This is instructor Profile
+
+
+>> Still There Notification and Messaging Systems we will show at the end <<
+
+
+LET US NOW CONTINUW WITH STUDENTS PANEL
+
+>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<
+
+
+
+Before Continue Since we have WI-FI Let us see Admin Analytics Reports
+
+
+Now if i apply filter on any Analytics Page The filter will applied on The Report
+
+
+we solve The problem we face again ... ... ... 
+
+THAT IS ALL .. Now let us Continuw with 
+Students Register ..
+onBoarding Steps .. 
+Email Verification and Password forget
+
+And After All of That we will see what we miss in Student Panel
+
+
+Student Register In App
+
+Now i make The reset password/Verify email links arrives in Logs File as we will see next
+
+
+Email Verifiede And we redirected to Student Dashboard 
+Since This first Time Login we see onBoarding Steps {Info about Platform}
+
+
+Now Let Us Try forget Password ... ..  ...
+
+we LOGIN WITH NEW PASSWORD NEXT MORE INFO ABOUT STUDENT PANEL
+
+
+
+Now id course status is cancelled for some student he must send message to Admin as we see to reenroll student in under some new price
+If pending Them Student must wait until dmin activate it
+
+If active Then he can study ... ... .. 
+
+
+As we see previous Student In This Page can see all Things related to Some Course
+Sessions and Attend Them
+Assignments and solve/submit them
+Materials and download/View Them
+... .. ...
+
+in short he can see his progreass an track in course ... 
+
+Now This Page os another Feature in The app which help Student to Organize There Learning Journy Through an Learning Path Generated By Some functions in The app
+Take Student Enrolled Course, Courses from wishlist and Recommandations 
+And Randomaly pick up 5 Courses for Student to focus In ,,, 
+
+
+Now This is all courses Page in Admin/Instructor There is no big usage for it only manage and View Courses
+
+>>> In Student Side he can <<<
+1- Enroll
+2- add to his/her wish list
+
+Enrollement pending wait for instructor Activation ...  
+
+
+Student wishlist Page
+
+This reminder will send Notification to Student some date to enroll in This course and start his learning journy ... 
+
+
+DO YOU SEE HOW WE ADD AND REMOVE FROM WISHLIST :)
+
+I think This is ALL FOR STUDENT PANEL NEXT AND LAST NOTIFICATION/MESSAGING SYSTEM
+
+
+)))))))))))))))((((((((((((((((((
+NOW FOR Notification System
+
+it's very simple idea but hard to coded 
+User recive Notifications in The center for Some Actions Done related to him for example 
+
+1- He recive a message
+2- he achive something finish course, get certificate, ... 
+3- reminders 
+4- enroll in course 
+5 ... etc. 
+
+
+See it's NEXT 
+There is four actions in The page 
+Delete 1 notification
+Clear All
+
+Mark one as read by click on it
+Mark all as read
+
+Blue is unread
+white is read
+
+when click on blue it becomes readed
+
+Now let us show Messaging system
+
+There are Three Pages
+1- sent.blade.php :: sent messages
+2- inbox.blade.php :: recived messages
+3- conversion.blade.php :: Conversion Page Have Sty'e and Design same as whatsapp :)
+
+See Them Next >> 
+
+Before That see That each 30 second The polling function works and Update count of Notifications
+
+
+Last Thing I need to show in This System is That Now if You want to contact some User That you never contact before How could you reach hime 
+
+Solution Contacts Page ... 
+Admin Have All Users as his contacts
+Instructor :: Admin and his Students
+Student :: Admin and His Instructors
+
+we see problem in contacts Page pagination i will solve Then come back
+
+
+
+WE SOLVE THE PROBLEM BY MAKE IT MATCH OTHER PAGES STYLES .. SEE RESULT
+
+
+
+
+Now Last Thing Student Profile ... ... ...
+
+As we say This settings Page is Dummy and ready for Future Updates
+
+Let Us Take a last Look on aboutr and contact us pages ;... ;
+
+
+This Google Map show Alrimal camp ... 
+
+
+
+Now Message sended from message form saved only in DB
+
+
+
+
